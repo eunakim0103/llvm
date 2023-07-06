@@ -96,7 +96,7 @@ A list of devices and their driver version following the pattern:
 Also may contain `PlatformVersion`, `DeviceName` and `PlatformName`. There is no
 fixed order of properties in the pattern.
 
-### `SYCL_DEVICE_FILTER`
+### `SYCL_DEVICE_FILTER` (deprecated)
 
 This environment variable limits the SYCL RT to use only a subset of the system's devices. Setting this environment variable affects all of the device query functions (`platform::get_devices()` and `platform::get_platforms()`) and all of the device selectors.
 

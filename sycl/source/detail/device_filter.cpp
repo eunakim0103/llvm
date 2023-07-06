@@ -283,6 +283,7 @@ bool ods_target_list::backendCompatible(backend Backend) {
 
 // ---------------------------------------
 // SYCL_DEVICE_FILTER support
+// TODO: remove when SYCL_DEVICE_FILTER has been completely removed from code
 
 device_filter::device_filter(const std::string &FilterString) {
   std::vector<std::string_view> Tokens = tokenize(FilterString, ":");

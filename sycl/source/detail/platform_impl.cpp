@@ -511,6 +511,8 @@ platform_impl::get_devices(info::device_type DeviceType) const {
   // Will we be filtering with SYCL_DEVICE_FILTER or ONEAPI_DEVICE_SELECTOR ?
   // We do NOT attempt to support both simultaneously.
   ods_target_list *OdsTargetList = SYCLConfig<ONEAPI_DEVICE_SELECTOR>::get();
+  // TODO: remove FilterList when SYCL_DEVICE_FILTER has been completely removed
+  // from code
   device_filter_list *FilterList = SYCLConfig<SYCL_DEVICE_FILTER>::get();
 
   if (is_host() && (DeviceType == info::device_type::host ||

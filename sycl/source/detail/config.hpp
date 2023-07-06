@@ -266,6 +266,7 @@ public:
 
 // ---------------------------------------
 // SYCL_DEVICE_FILTER support
+// TODO: remove when SYCL_DEVICE_FILTER has been completely removed from code
 
 template <>
 class __SYCL2020_DEPRECATED("Use SYCLConfig<ONEAPI_DEVICE_SELECTOR> instead")

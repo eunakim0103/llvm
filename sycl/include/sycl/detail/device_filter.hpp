@@ -68,6 +68,7 @@ std::vector<ods_target> Parse_ONEAPI_DEVICE_SELECTOR(const std::string &envStr);
 
 // ---------------------------------------
 // SYCL_DEVICE_FILTER support
+// TODO: remove when SYCL_DEVICE_FILTER has been completely removed from code
 
 struct device_filter {
   std::optional<backend> Backend;

@@ -271,6 +271,8 @@ std::vector<std::pair<std::string, backend>> findPlugins() {
   // env only.
   //
 
+  // TODO: remove FilterList when SYCL_DEVICE_FILTER has been completely removed
+  // from code
   device_filter_list *FilterList = SYCLConfig<SYCL_DEVICE_FILTER>::get();
   ods_target_list *OdsTargetList = SYCLConfig<ONEAPI_DEVICE_SELECTOR>::get();
 
